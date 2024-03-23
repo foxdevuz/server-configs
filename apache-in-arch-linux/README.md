@@ -49,15 +49,12 @@ Kerakli paketlar: ``gedit``, ``phpmyadmin``, ``apache``, ``php-apache``, ``maria
 
     va ochilgan oynani eng pastki qismiga
 
-  ``` LoadModule php_module modules/libphp.so ```
-   
-  ``` AddHandler php-script .php ```
-   
-  ``` Include conf/extra/php_module.conf ```
-  
-  qatorlarini yozing
-
-
+  ``` 
+    LoadModule php_module modules/libphp.so 
+    AddHandler php-script .php
+    Include conf/extra/php_module.conf
+    qatorlarini yozing
+  ```
 * Faylni saqlab serverni qayta ishga tushuring
 
     Buning uchun quydagi buyruqni terminlda ishga tushuring
@@ -68,7 +65,7 @@ Kerakli paketlar: ``gedit``, ``phpmyadmin``, ``apache``, ``php-apache``, ``maria
 ## PHP o'rnatilganini tekshirish (Ixtiyoriy)
 * Apache uchun root folder ``/var/http/`` folderida joylashgan bo'ladi. va biz bu folderda fayl yaratish uchun avval quyidagi buyqurni amalga oshirishimiz kerak
 
-    ```sudo chown -R <username>:<username> /var/http ```
+    ```sudo chown -R <username>:<username> /srv/http ```
 
     ``<username>`` qismini o'zingizni login foydalanuvchi nomi bilan almashtiring
 
